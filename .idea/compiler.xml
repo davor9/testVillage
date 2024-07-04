@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="tvwesthood" />
+        <module name="tv.westhood" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="tv.westhood" options="-parameters" />
       <module name="tvwesthood" options="-parameters" />
     </option>
   </component>
